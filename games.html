@@ -10,40 +10,4 @@
   <p> --- </p> <h1> Current Game (1-1000)</h1>
   
   <p> The current challenge is just a test run to tell everyone about the new games section of the website. Try to guess the number between 1 and 1000. Submit the number on the bottom of the google doc next to your name.</p>
-<h1>Comment's:</h1>
-<?php 
-$i  = addslashes($_POST['a']);
-$ip = addslashes($_POST['b']);
-$a  = addslashes($_POST['c']);
-$b  = addslashes($_POST['d']);
-if(isset($i) & isset($ip) & isset($a) & isset($b))
-{
-    $r = mysql_query("SELECT COUNT(*) FROM $db.ban WHERE ip=$ip"); //Check if banned
-    $r = mysql_fetch_array($r);
-    if(!$r[0]) //Phew, not banned
-    {
-        if(mysql_query("INSERT INTO $db.com VALUES ($a, $b, $ip, $i)"))
-        {
-            ?>
-            <script type="text/javascript">
-                window.location="/index.php?id=".<?php echo $i; ?>;
-            </script>
-            <?php
-        }
-        else echo "Error, in mysql query";  
-    }
-    else echo "Error, You are banned.";
-}
-$x = mysql_query("SELECT * FROM $db.com WHERE i=$i");
-while($r = mysql_fetch_object($x) echo '<div class="c"></p> </div>';
 
-?>  
-<h1>Leave a comment:</h1>
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-    <input type="hidden" name="a" value="<?php $echo $_GET['id'];/>
-    <input type="hidden" name="b" value="<?php $echo $_SERVER['REMOTE_ADDR'];  />
-    <input type="text" name="c" value="Name"/></br>
-    <textarea name="d">
-    </textarea>
-    <input type="submit" />
-</form>
