@@ -1,6 +1,6 @@
 .main-title {
   background-color: lightgreen;
-  border-color: green;
+  border: 2px solid green;
   font-size: 70px;
   font-family: Arial;
   text-align: center;
