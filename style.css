@@ -7,6 +7,14 @@
   font-family: Arial;
   text-align: center;
   font-size: 70px;
+}
 
+.blue-title {
+  background-color: lightblue;
+  border: 2px solid blue;
 
+}
+
+body {
+  color: gray;
 }
