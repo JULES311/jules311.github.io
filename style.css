@@ -1,7 +1,12 @@
-.main-title {
+.green-title {
   background-color: lightgreen;
   border: 2px solid green;
-  font-size: 70px;
+}
+
+.title-size {
   font-family: Arial;
   text-align: center;
+  font-size: 70px;
+
+
 }
