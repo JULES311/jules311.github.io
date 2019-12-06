@@ -18,6 +18,12 @@
   border: 2px solid blue;
 }
 
+.purple-title {
+  background-color: lightpurple;
+  border: 2px solid purple;
+  
+}
+
 .text {
   font-family: Helvetica;
 
