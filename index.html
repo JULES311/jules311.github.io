@@ -29,6 +29,7 @@
 </head>
 <body>
 	<script>
+		Slve = prompt("buy or sell")
 		name = prompt("Whats your name?")
 		if (name == "Julian") {
 			alert("Access Granted")
@@ -45,7 +46,22 @@
 		else if (name == "Dawson") {
 			alert("Access Granted")
 			window.location.href = "home.html";
-		} else {
+		} 
+		else if (name == "Slave") {
+			alert("Welcome")
+			if (Slve == "sell") {
+			alert("Access Granted")
+			window.location.href = "home.html";
+			}
+			else if (Slve == "buy") {
+			alert("Not here")
+			window.location.href = "www.blackpeoplemeet.com";
+			else {
+			alert("Acess Denied")
+			window.location.href = "www.blackpeoplemeet.com";
+		}
+				
+		else {
 			alert("Acess Denied")
 			window.location.href = "www.blackpeoplemeet.com";
 		}
